@@ -6,7 +6,7 @@
     <div class="bottom">底部</div>
     <div class="right">
       <div class="content">
-          内容区域
+        <el-button type='text'>内容区域</el-button>
         <router-view/>
       </div>
     </div>
