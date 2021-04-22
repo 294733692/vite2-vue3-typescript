@@ -1,4 +1,4 @@
-import defaultState from "./state";
+import defaultState from './state'
 
 export default {
   double(state: typeof defaultState) {

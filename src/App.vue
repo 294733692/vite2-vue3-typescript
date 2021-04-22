@@ -1,18 +1,17 @@
 <template>
-  <index/>
+  <index />
 </template>
 
 <script lang="ts">
-  import {defineComponent} from 'vue'
-  import index from './components/index.vue'
+import { defineComponent } from 'vue'
+import index from './components/index.vue'
 
-  export default defineComponent({
-    name: 'App',
-    components: {
-      index
-    }
-  })
+export default defineComponent({
+  name: 'App',
+  components: {
+    index
+  }
+})
 </script>
 
-<style>
-</style>
+<style></style>
