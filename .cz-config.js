@@ -30,7 +30,7 @@ module.exports = {
   ].map(([value, description]) => {
     return {
       value,
-      name: `${value.padEnd(30)} (${description}})}`
+      name: `${value.padEnd(30)} (${description})`
     }
   }),
 
