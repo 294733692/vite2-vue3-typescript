@@ -1,19 +1,28 @@
-<template></template>
+<template>
+  <div class="axios">
+    <el-button @click="getUserInfo">获取信息</el-button>
+    {{ userInfo?.name }}
+  </div>
+</template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref, Ref } from 'vue'
 import axios from '../utils/axios'
 
 export default defineComponent({
   setup() {
-    axios
-      .get('/users/XPoet')
-      .then((res) => {
-        console.log('res', res)
+    const userInfo: Ref = ref(null)
+    const getUserInfo = () => {
+      axios.get('/users/XPoet').then((res: { data: Object }) => {
+        userInfo.value = res.data
+        console.log(userInfo)
       })
-      .catch((err) => {
-        console.log('err', err)
-      })
+    }
+
+    return {
+      userInfo,
+      getUserInfo
+    }
   }
 })
 </script>

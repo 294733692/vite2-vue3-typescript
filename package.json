@@ -5,7 +5,8 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
-    "prettier": "npx prettier --write ."
+    "prettier": "npx prettier --write .",
+    "eslint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue src/ "
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -22,7 +23,9 @@
     "@vue/compiler-sfc": "^3.0.5",
     "eslint": "^7.24.0",
     "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.9.0",
     "prettier": "^2.2.1",
     "sass": "^1.32.11",

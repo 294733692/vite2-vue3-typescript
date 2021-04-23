@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <div class="vuex"></div>
+</template>
 
 <script>
 export default {
