@@ -6,5 +6,5 @@ test('Test.vue', async () => {
   expect(wrapper.html()).toContain('Unit Test Page')
   expect(wrapper.html()).toContain('count is: 0')
   await wrapper.find('button').trigger('click')
-  expect(wrapper.html()).toContain('count is: 1')
+  expect(wrapper.html()).toContain('count is: 2')
 })
