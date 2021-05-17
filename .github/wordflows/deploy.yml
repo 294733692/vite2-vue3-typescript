@@ -28,4 +28,4 @@ jobs:
           github_token: ${{ secrets.VUE3_DEPLOY }} # secret 名
           user_name: ${{ secrets.MY_USER_NAME }}
           user_email: ${{ secrets.MY_USER_EMAIL }}
-          commit_message: Update Vite2.x + Vue3.x + TypeScript  # 部署是的 git 提交信息，可以随便填写
+          commit_message: Update Vite2.x + Vue3.x + TypeScript # 部署是的 git 提交信息，可以随便填写
